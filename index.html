@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Главная</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/min-style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	</head>
+
+	<body>
+
+	<div class="container">
+
+		<header class="header">
+			<nav class="header__nav clearfix">
+				<ul>
+					<li><a href="#" class="active">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<h1 class="logo"><a href="index.html" title="SEDONA"><img src="images/logo.png" width="138" height="70" alt="SEDONA"></a></h1>
+					<li><a href="hotels.html">Гостиницы</a></li>
+					<li><a href="#">Карта штата</a></li>
+				</ul>
+	  	</nav>
+		</header>
+
+		<div class="banner">
+			<img src="images/sedona.png" width="1200" height="564" alt="Sedona">
+		</div>
+
+		<div class="intro">
+			<h2 class="intro__heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+			<p class="intro__text">Рассмотрим 5 причин, по которым Седона лучше, чем Гранд Каньон!</p>
+		</div>
+
+		<section class="bar bar-reason1">
+			<div class="bar__content">
+				<h2 class="bar__heading">Настоящий<br>городок</h2>
+				<span class="bar__num">&mdash;№1&mdash;</span>
+				<p class="bar__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+			</div>
+		</section>
+
+		<section class="items items1 clearfix">
+			<div class="item">
+				<img class="block__icon" src="images/house.png" width="75" height="72" alt="Иконка">
+				<h2 class="block__heading">Жилье</h2>
+				<p class="block__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			</div>
+			<div class="item">
+				<img class="block__icon" src="images/food.png" width="74" height="70" alt="Иконка">
+				<h2 class="block__heading">Еда</h2>
+				<p class="block__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+			</div>
+			<div class="item">
+				<img class="block__icon" src="images/souvenirs.png" width="64" height="76" alt="Иконка">
+				<h2 class="block__heading">Сувениры</h2>
+				<p class="block__text">Не только китайского, но и местного производства!</p>
+			</div>
+		</section>
+
+		<section class="bar bar-reason2">
+			<div class="bar__content">
+				<h2 class="bar__heading">Там есть<br>мост дьявола</h2>
+				<span class="bar__num">&mdash;№2&mdash;</span>
+				<p class="bar__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			</div>
+		</section>
+
+		<section class="items items2 clearfix">
+			<div class="item">
+				<h2 class="block__heading">Небольшая площадь</h2>
+				<span class="block__num">&mdash;№3&mdash;</span>
+				<p class="block__text">Все достопримечательности находятся очень близко</p>
+			</div>
+			<div class="item">
+				<h2 class="block__heading">Красивая дорога</h2>
+				<span class="block__num">&mdash;№4&mdash;</span>
+				<p class="block__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+			</div>
+			<div class="item">
+				<h2 class="block__heading">Мало туристов</h2>
+				<span class="block__num">&mdash;№5&mdash;</span>
+				<p class="block__text">Большинство едет в Гранд Каньон и толпится там</p>
+			</div>
+		</section>
+
+		<section class="search">
+			<div class="search__block">
+				<h2 class="search__heading">Заинтересовались?</h2>
+				<p class="search-intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<button type="submit" class="btn btn_dark">Поиск гостиниц в Седоне</button>
+					<div class="search__form">
+					<form action="get">
+							<div class="formgroup formgroup-arrival">
+								<label for="date1"> Дата заезда: </label>
+								<input type="text" id="date1">
+								<button type="button"> Календарь </button>
+							</div>
+							<div class="formgroup formgroup-departure">
+								<label for="date2"> Дата выезда: </label>
+								<input type="text" id="date2">
+								<button type="button"> Календарь </button>
+							</div>
+							<div class="formgroup formgroup-people clearfix">
+								<div class="people-adult">
+								<label for="adult"> Взрослые: </label>
+								<div class="range">
+									<button type="button" class="minus"> - </button>
+									<input type="text" id="adult" value="2">
+									<button type="button" class="plus"> + </button>
+								</div>
+								</div>
+								<div class="people-kids">
+								<label for="kids"> Дети: </label>
+								<div class="range">
+									<button type="button" class="minus"> - </button>
+									<input type="text" id="kids" value="0">
+									<button type="button" class="plus"> + </button>
+								</div>
+								</div>
+							</div>
+							<button type="submit" class="btn btn_light">Найти</button>
+						</form>
+					</div>
+				</div>
+		</section>
+
+		<div class="map"><img src="images/map.png" width="1200" height="475" alt="Карта"></div>
+
+		<footer>
+			<div class="footer clearfix">
+				<div class="footer__text">#VISITSEDONA</div>
+				<div class="footer__buttons">
+					<a href="#" class="btn_social"><img src="images/tw.png" width="17" height="15" alt="Иконка"></a>
+					<a href="#" class="btn_social"><img src="images/fb.png" width="10" height="19" alt="Иконка"></a>
+					<a href="#" class="btn_social"><img src="images/yt.png" width="20" height="16" alt="Иконка"></a>
+				</div>
+				<div class="footer__logo">
+					<span class="footer__logo-text">WEBSITE BY</span>
+					<a href="#" class="footer__logo-image">HTML Academy</a>
+				</div>
+			</div>
+		</footer>
+
+		</div>
+
+	</body>
+</html>
